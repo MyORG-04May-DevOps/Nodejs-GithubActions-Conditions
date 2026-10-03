@@ -2,8 +2,8 @@ name: Test and build nodejs Code
 on: push 
 jobs:
     testJob:
-      runs-on: ubuntu-latest
       continue-on-error: true
+      runs-on: ubuntu-latest
       steps:
        - name: Checkout the code on runner ubuntu
          uses: actions/checkout@v7
@@ -16,8 +16,8 @@ jobs:
        - name: Execute tests 
          run: npm test
     buildJob:
-      runs-on: ubuntu-latest
       continue-on-error: true
+      runs-on: ubuntu-latest
       steps:
        - name: Checkout the code on runner ubuntu
          uses: actions/checkout@v7
